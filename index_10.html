@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 10</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var string = prompt("Introduce una frase:");
+			var vowels = ['a','e','i','o','u'];
+			var result = "";
+			for (i = 0;i < vowels.length;i++){
+				if (string.indexOf(vowels[i]) != -1){
+					result += vowels[i];
+				} 
+			}
+			document.write(result);
+		}
+	</script>
+</body>
+</html>

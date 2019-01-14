@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 6</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var firstNumber = parseInt(prompt("Primer número:"));
+			var secondNumber = parseInt(prompt("Segundo número:"));
+			if (firstNumber > secondNumber){
+				document.write(firstNumber + " es el mayor.");
+			}else{
+				if (secondNumber > firstNumber){
+					document.write(secondNumber + " es el mayor.");
+				}else{
+					document.write("Los números son iguales.");
+				}
+			}
+		}
+	</script>
+</body>
+</html>

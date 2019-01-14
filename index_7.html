@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 7</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var firstNumber = parseInt(prompt("Primer número:"));
+			var secondNumber = parseInt(prompt("Segundo número:"));
+			var thirdNumber = parseInt(prompt("Tercer número:"));
+			if (firstNumber > secondNumber && firstNumber > thirdNumber){
+				document.write(firstNumber + " es el mayor.");
+			}else if(secondNumber > firstNumber && secondNumber > thirdNumber){
+				document.write(secondNumber + " es el mayor.");
+			}else{
+				document.write(thirdNumber + " es el mayor.");
+			}
+		}
+	</script>
+</body>
+</html>
