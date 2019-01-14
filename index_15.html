@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 15</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var number = parseInt(prompt("Introduce un número:"));
+			var divisible = "";
+			for (i = 1;i <= number;i++){
+				if (number % i == 0){
+					divisible += i + " ";
+				}
+			}
+			document.write("Números divisibles: " + divisible);
+		}
+	</script>
+</body>
+</html>

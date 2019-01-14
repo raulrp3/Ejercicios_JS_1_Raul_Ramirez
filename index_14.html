@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 14</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var number = parseInt(prompt("Introduce un número:"));
+			var divisible = [2,3,5,7];
+			var strDivisible = "";
+			for (i = 0;i < divisible.length;i++){
+				if (number % divisible[i] == 0){
+					strDivisible += divisible[i] + " ";
+				}
+			}
+			document.write("Números divisibles: " + strDivisible);
+		}
+	</script>
+</body>
+</html>

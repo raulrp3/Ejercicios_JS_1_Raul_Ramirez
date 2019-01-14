@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJERCICIO 16</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var firstNumber = (prompt("Introduce un número:"));
+			var secondNumber = (prompt("Introduce un número:"));
+			var min,result = "";
+			if (firstNumber < secondNumber){
+				min = firstNumber;
+			}else{
+				min = secondNumber;
+			}
+			for (i = 1;i < min / 2; i++){
+				if (firstNumber % i == 0 && secondNumber % i == 0){
+					result += i + " ";
+				}
+			}
+			document.write("Divisores comunes: " + result);
+		}
+	</script>
+</body>
+</html>

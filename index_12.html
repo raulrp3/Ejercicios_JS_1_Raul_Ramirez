@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>EJERCICIO 11</title>
+	<title>EJERCICIO 12</title>
 </head>
 <body>
 	<script>
 		window.onload = function(){
 			var string = prompt("Introduce una frase:");
-			var counter = 0;
 			var vowels = ['a','e','i','o','u'];
+			var result = "";
 			string = string.toLowerCase();
 			for (i = 0;i < vowels.length;i++){
-				counter += string.split(vowels[i]).length - 1;
+				result += vowels[i] + ": " + (string.split(vowels[i]).length - 1) + "</br>"
 			}
-			document.write("Número de vocales: " + counter);
+			document.write(result);
 		}
 	</script>
 </body>
